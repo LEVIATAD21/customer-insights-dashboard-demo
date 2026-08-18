@@ -1,3 +1,5 @@
+![Motion Banner](assets/motion-banner.gif)
+
 # Planejamento: SaaS de análise de atendimento
 
 > **Status:** planejamento privado de produto. Não contém dados de conversas, integrações externas ou código.
