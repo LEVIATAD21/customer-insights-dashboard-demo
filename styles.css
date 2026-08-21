@@ -1,0 +1,50 @@
+:root { --accent: #176b87; --ink: #132238; --muted: #607087; --surface: #ffffff; --line: #dbe4ef; --paper: #f6f8fc; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); line-height: 1.5; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+.shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+.notice { background: #fff8d8; color: #5b4812; padding: 10px 14px; text-align: center; font-size: .875rem; border-bottom: 1px solid #ead89b; }
+header { background: var(--surface); border-bottom: 1px solid var(--line); }
+.nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { font-weight: 800; letter-spacing: -.03em; text-decoration: none; }
+.brand span { color: var(--accent); }
+.tag { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 6px 10px; color: var(--muted); font-size: .8rem; }
+main { padding: 48px 0 64px; }
+.hero { display: grid; grid-template-columns: 1.3fr .7fr; gap: 24px; margin-bottom: 28px; }
+.hero-card, .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 12px 30px rgba(22, 39, 65, .06); }
+.hero-card { padding: clamp(24px, 4vw, 48px); }
+.eyebrow { color: var(--accent); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; }
+h1 { margin: 10px 0 14px; font-size: clamp(2rem, 4vw, 3.7rem); letter-spacing: -.055em; line-height: 1.05; }
+h2 { margin-top: 0; letter-spacing: -.025em; }
+.lede { color: var(--muted); max-width: 64ch; }
+.metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.metric { padding: 18px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 10%, white); }
+.metric b { display: block; font-size: 1.4rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.grid.two { grid-template-columns: repeat(2, 1fr); }
+.card { padding: 22px; }
+.card h3 { margin: 0 0 8px; }
+.muted { color: var(--muted); }
+.button { border: 0; border-radius: 10px; padding: 11px 15px; color: #fff; background: var(--accent); font-weight: 700; }
+.button.secondary { color: var(--ink); background: #eef2f7; }
+.button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 40%, transparent); outline-offset: 2px; }
+.stack { display: grid; gap: 12px; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.field { display: grid; gap: 6px; font-weight: 650; font-size: .9rem; }
+.field input, .field select, .field textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); }
+.result { margin-top: 12px; padding: 12px; border-radius: 10px; background: #eef8f2; color: #1d6039; font-size: .92rem; }
+.error { background: #fff0ef; color: #9b3128; }
+.pill { display: inline-block; border-radius: 999px; padding: 4px 8px; background: #eef2f7; color: var(--muted); font-size: .78rem; }
+.progress { height: 9px; background: #edf1f6; border-radius: 999px; overflow: hidden; }
+.progress > span { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+.list { display: grid; gap: 10px; }
+.item { padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.item.selected { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 14%, transparent); }
+.empty { padding: 18px; background: #fff8d8; border-radius: 12px; color: #5b4812; }
+.faq button { width: 100%; display: flex; justify-content: space-between; text-align: left; border: 0; background: transparent; padding: 14px 0; font-weight: 750; }
+.faq + .faq { border-top: 1px solid var(--line); }
+.faq p { color: var(--muted); margin: 0 0 14px; }
+footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+@media (max-width: 780px) { .hero, .grid, .grid.two { grid-template-columns: 1fr; } main { padding-top: 28px; } .nav { min-height: 64px; } }

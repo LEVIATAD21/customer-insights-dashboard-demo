@@ -1,22 +1,24 @@
-![Motion Banner](assets/motion-banner.gif)
+# Painel de Insights de Atendimento
 
-# Planejamento: SaaS de análise de atendimento
+> **Demo de portfólio independente.** Não representa trabalho contratado, dados de cliente, integração produtiva ou resultado comercial.
 
-> **Status:** planejamento privado de produto. Não contém dados de conversas, integrações externas ou código.
+Demo de painel local para normalizar registros fictícios e exibir métricas revisáveis.
 
-## Objetivo
+## Funcionalidades demonstradas
 
-Mapear uma aplicação que receba dados autorizados de atendimento, organize indicadores e apresente recomendações revisáveis ao gestor.
+- Registros fictícios e explicitamente identificados.
+- Métricas calculadas localmente.
+- Filtro de período e origem.
 
-## Componentes de produto
+## Executar e revisar
 
-| Camada | Responsabilidade |
-|---|---|
-| Entrada | Conectores autorizados ou importação controlada de dados. |
-| Processamento | Normalização, classificação e métricas auditáveis. |
-| Painel | Indicadores, períodos, filtros e evidências associadas. |
-| Governança | Permissões, retenção, exportação e exclusão de dados. |
+```bash
+npm test
+npm run review
+```
 
-## Critérios de aceite
+Os testes cobrem a lógica central da demo. A revisão estática confere os arquivos obrigatórios, a identificação de demo e a ausência de arquivos de ambiente.
 
-O produto precisa definir fontes de dados, consentimento, privacidade e indicadores antes de qualquer desenvolvimento. Não há promessa de integração com plataformas sem API ou autorização.
+## Limites
+
+Dados, contatos e números apresentados pela interface são estritamente ilustrativos. Integrações, pagamento, hospedagem, banco de dados e dados de terceiros exigem escopo e autorização próprios.
